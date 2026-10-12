@@ -1,10 +1,11 @@
 :root {
-    --bg-color: #0d1117; /* Very dark blue/grey */
-    --bg-alt: #161b22;
-    --text-color: #c9d1d9;
-    --text-muted: #8b949e;
-    --accent: #58a6ff;
-    --font-family: 'Noto Serif JP', serif;
+    --bg-color: #0f1c3f; /* 深い青色 */
+    --bg-alt: #162650;   /* 背景の別カラー */
+    --text-color: #ffffff; /* 白色 */
+    --text-muted: #b8c7e0;
+    --accent: #fcd53f; /* 黄色（ベースのアクセント） */
+    --accent-red: #e63946; /* 赤色（差し色） */
+    --font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 html {
@@ -84,7 +85,7 @@ nav {
     align-items: center;
     justify-content: flex-start;
     text-align: left;
-    background-image: linear-gradient(to bottom, rgba(13, 17, 23, 0.4) 0%, rgba(13, 17, 23, 1) 100%), url('beacon_wide.jpg');
+    background-image: linear-gradient(to bottom, rgba(15, 28, 63, 0.4) 0%, rgba(15, 28, 63, 1) 100%), url('beacon_wide.jpg');
     background-size: cover;
     background-position: center;
     padding-left: 10%;
@@ -195,7 +196,7 @@ nav {
 .rule-item {
     padding: 2rem;
     background: rgba(255, 255, 255, 0.02);
-    border-left: 2px solid var(--accent);
+    border-left: 3px solid var(--accent-red);
     border-radius: 4px;
     transition: transform 0.4s ease, background 0.4s ease;
 }
@@ -218,8 +219,8 @@ nav {
 
 .rule-item h3 span {
     font-size: 1.5rem;
-    color: var(--accent);
-    font-weight: 300;
+    color: var(--accent-red);
+    font-weight: 500;
 }
 
 .rule-item p {
@@ -250,7 +251,9 @@ nav {
 
 .btn:hover {
     background: var(--accent);
-    color: #fff;
+    color: var(--bg-color);
+    font-weight: 700;
+    border-color: var(--accent);
 }
 
 /* Footer */
